@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<title>CSS Website Layout</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			/*style head*/
+			.header{
+				background-color: red;
+				padding: 20px;
+				text-align: center;
+			}
+			/* merubah warna pas kursor di meneyntuh link*/
+			.topnav a:hover{
+				background-color: #ddd;
+				color: black;
+			}
+			.topnav a{
+				float:left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			*{
+				box-sizing: border-box;
+			}
+			/* style the top navigation bar*/
+
+			.topnav{
+				overflow: hidden;
+				background-color: #333;
+			}
+			.column{
+				float: left;
+				width: 33.33%;
+				padding: 15px;
+			}
+			.row::after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background: white;
+			}
+			.header h1{
+				font-size: 50px;
+			}
+			.leftcolumn{
+				float: left;
+				width: 75%;
+			}
+			.rightcolumn{
+				float: left;
+				width: 25%;
+				background-color: #yellow;
+				padding-left: 20px;
+			}
+			.fakeimg {
+				background-color: #aaa;
+				width: 100%;
+				padding: 20px;
+			}
+			.card{
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+			}
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: white;
+				margin_top:20px;
+			}
+			@media screen and (max-width:800px){
+				.leftcolumn,.rightcolumn{
+					width: 100%;
+					padding: 0;
+				}
+			}
+			@media screen and (max-width:400px){
+				.topnav a{
+					float: none;
+					width: 100%;h
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Manchester United</h1>
+			<p>GLORY GLORY MAN UNITED</p>
+		</div>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="piala.html">Tropies</a>
+		</div>
+		<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>Manchester United</h2>
+			<img src="cr7.jpg"width="30%">
+			<p>CR7</p>
+		</div>
+</div>
+<div class="rightcolumn">
+	<div class="card">
+		<h2>Tentang Kami</h2>
+		<img src="mar.jpg"width="100%">
+		<p><i><b>Julukan</b>:The Red Devils (Setan Merah).</i></p>
+		<p><i><b>Manager</b>:Erig ten Hag.</i></p>
+		<p><i><b>Stadion</b>:Old Trafford (kapasitas:74.310).</i></p>
+	</div>
+	<div class="card">
+		<h3>Jersey Musim 2023-2024</h3>
+		<div class="fakeimg"><p>image</p></div>
+		<div class="fakeimg"><p>image</p></div>
+		<div class="fakeimg"><p>image</p></div>
+	</div>
+	<div class="card">
+		<h3>Ikuti Kami</h3>
+        <p>Instagram:@manchesterunited</p>
+		<p>Youtube:Manchester United</p>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<h2>footer</h2>
+</div>
+	</body>
+</html>
